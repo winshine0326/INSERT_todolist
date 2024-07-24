@@ -276,20 +276,20 @@ createElement는 JS에서 HTML 태그를 추가할 수 있는 문법이랍니다
 const span = document.createElement('span') // 이런 식으로 생성과 동시에 변수에 할당할 수 있습니다.
 const div = document.querySelector('#box') // 태그를 넣고싶은 위치의 상위 태그를 가져옵시다.
 
-span.innerText = 'I am Ubin!'
+span.innerText = 'I am hoon!'
 
 div.appendChild(span) // append child, div 안에 만들어준 span을 넣는다는 뜻입니다.
 ```
 
 끝이에요! 어떤가요? 생각보다 쉽죠? append child, 말그대로 자식을 추가한다는 뜻으로, 위치시키고 싶은 태그의  
 부모 태그에 appendChild 함수를 사용해주면 된답니다. 이렇게 되면 box라는 id의 div 안에 span이 두 개 생기고,  
-각각 "Hello? "와 "I am Ubin!"이라는 내용을 가지고 있겠죠? 또 요소를 지우는법을 알아봅시다. 정말 쉽답니다.
+각각 "Hello? "와 "I am hoon!"이라는 내용을 가지고 있겠죠? 또 요소를 지우는법을 알아봅시다. 정말 쉽답니다.
 
 ```js
 const span = document.createElement('span') // 이런 식으로 생성과 동시에 변수에 할당할 수 있습니다.
 const div = document.querySelector('#box') // 태그를 넣고싶은 위치의 상위 태그를 가져옵시다.
 
-span.innerText = 'I am Ubin!'
+span.innerText = 'I am hoon!'
 
 div.appendChild(span) // append child, div 안에 만들어준 span을 넣는다는 뜻입니다.
 
@@ -309,7 +309,7 @@ const onClickRemoveHTMLTag = (e) => {
 이제 메인 과제를 짜봅시다. todo 폴더 내에 있는 템플릿을 사용해서 나만의 투두리스트를 만들고, 풀 리퀘스트를 생성해봅시다.  
 코드 컨벤션은 마땅히 없고, 저번에 리뷰받은 코드 리뷰들을 생각하며 좋은 코드를 작성하도록 합니다.  
 처음부터 좋은 코드를 작성할 필요는 없으며, 처음엔 대충 작성한 후 리팩토링을 통해 코드의 질을 향상하는 것도 좋은 방법입니다.  
-CSS는 마음대로, 자신의 개성대로 짜주세요!! CSS없으면 서운합니당 ㅎㅎ.. 제목도 막 "우빈이의 투두리스트" 이런식으로 달아줘도 됩니다.  
+CSS는 마음대로, 자신의 개성대로 짜주세요!! CSS없으면 서운합니당 ㅎㅎ.. 제목도 막 "영은이의 투두리스트" 이런식으로 달아줘도 됩니다.  
 좀 오글거리긴하네요 ^^^^.... 코드를 설명하는 주석을 다는 것도 좋습니다!
 
 힘들었을텐데 끝까지 봐줘서 고맙습니다! 이번 주 양이 많이 빡세죠..?? 그래도 여러분들으ㄹ 위해 900줄의 예제를 직접 하나하나 타이핑하여  
