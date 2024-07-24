@@ -29,7 +29,7 @@ DOM에 접근한다는 말이 무슨 뜻일까요? 알고보면 그렇게 어려
 		<h1 id="greeting">Hi There!</h1>
 	</div>
 	<div class="box">
-		<span id="introduce">I am Ubin.</span>
+		<span id="introduce">I am hoon.</span>
 	</div>
 	<script src="script.js"></script>
 </body>
@@ -40,7 +40,7 @@ DOM에 접근한다는 말이 무슨 뜻일까요? 알고보면 그렇게 어려
 document.getElementById('greeting') // <h1 id="greeting">Hi There!</h1> 태그가 불러와집니다.
 document.getElementsByClassName('box') // <div class="box"> 두 태그가 배열 형태로 불러와집니다.
 
-document.querySelector('#introduce') // <span id="introduce">I am Ubin.</span> 태그가 불러와집니다.
+document.querySelector('#introduce') // <span id="introduce">I am hoon.</span> 태그가 불러와집니다.
 document.querySelector('.box') // <div class="box"> 두 태그가 배열 형태로 불러와집니다.
 document.querySelector('h1') // // <h1 id="greeting">Hi There!</h1> 태그가 불러와집니다.
 ```
@@ -55,13 +55,13 @@ query selector는 아까 말한 것처럼 css선택자로 접근해요. css에�
 
 ## JS로 동적인 웹사이트 만들기
 
-JS에서 "I am Ubin."을 다른 이름으로 바꿔볼게요.
+JS에서 "I am hoon."을 다른 이름으로 바꿔볼게요.
 
 ```js
 const introduce = document.getElementById('introduce') // 변수명은 불러오는 이름과 달라도 상관없습니다.
 
-introduce.innerText = 'my name is Seokjin!' // innerText라는 속성으로 문자를 바꿀 수 있습니다.
-introduce.innerHTML = "<strong>I'm Sewon.</strong>" // innerHTML이라는 속성으로 HTML 태그를 넣을 수 있습니다.
+introduce.innerText = 'my name is youngeun!' // innerText라는 속성으로 문자를 바꿀 수 있습니다.
+introduce.innerHTML = "<strong>I'm siyeon</strong>" // innerHTML이라는 속성으로 HTML 태그를 넣을 수 있습니다.
 ```
 
 어떤가요? 흥미가 좀 생기나요? 이해가 안된다면 구글링 혹은 바로 질문하세요!!  
