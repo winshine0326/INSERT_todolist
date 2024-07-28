@@ -65,3 +65,10 @@ li>button{
 li>button:hover{
     background-color: #a6a6a6;
 }
+
+.delbtn{
+    float:right;
+    background-color: rgb(255, 112, 112);
+    height: auto;
+    width: auto;
+}
