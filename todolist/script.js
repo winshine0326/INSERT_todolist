@@ -40,7 +40,10 @@ function addTodolist() {
 
     text.addEventListener('dblclick', () => {
         let newtext = prompt("변경할 내용을 입력해주세요")
-        text.innerHTML = newtext
+        if(!(!!newtext))
+            alert("잘못된 요청입니다!") // 내용이 비워져있으면 수정x
+        else
+            text.innerHTML = newtext
     }) // 텍스트 더블클릭 시 내용 수정
 
     delbtn.addEventListener('click', () => {
