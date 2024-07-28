@@ -1,4 +1,5 @@
 function addTodolist() {
+    let swt = true
     let li = document.createElement('li')
     let text = document.createElement('span')
     let btn = document.createElement('button')
@@ -17,11 +18,21 @@ function addTodolist() {
     }
     console.log(todolist)
 
-    li.addEventListener('click',()=>{
-        li.style.textDecoration="line-through"
-    }) // 한번 클릭 시 텍스트에 줄 긋기
+    btn.addEventListener('click', () => {
+        if (swt) {
+            li.style.textDecoration = "line-through"
+            btn.style.backgroundColor = "#e37e8e"
+            swt=false
+        } // 체크 안되어 있을 시 버튼 누르면 밑줄 긋기
+        else{
+            li.style.textDecoration = "none"
+            btn.style.backgroundColor = "white"
+            swt=true
+        } // 체크 되어 있을 시 버튼 누르면 밑줄 삭제
+        
+    }) // 버튼 한번 클릭 시 텍스트에 줄 긋기
 
-    li.addEventListener('dblclick',()=>{
+    text.addEventListener('dblclick', () => {
         todolist.removeChild(li)
-    }) // 더블클릭하면 할 일 목록에서 제거
+    }) // 글자 더블클릭 시 할 일 목록에서 제거
 }
