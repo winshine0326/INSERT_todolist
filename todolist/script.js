@@ -7,6 +7,7 @@ function addTodolist() {
     li.appendChild(btn)
     li.appendChild(text)
 
+
     const todo = document.querySelector('#textcontainer')
     if (!todo.value)
         alert("해야할 일을 작성해주세요!")
@@ -31,10 +32,13 @@ function addTodolist() {
             btn.style.backgroundColor = "white"
             swt=true
         } // 체크 되어 있을 시 버튼 누르면 밑줄 삭제
-        
+
     }) // 버튼 한번 클릭 시 텍스트에 줄 긋기
 
-    text.addEventListener('dblclick', () => {
-        todolist.removeChild(li)
-    }) // 글자 더블클릭 시 할 일 목록에서 제거
+    
+
+    text.addEventListener('dblclick',()=>{
+        let newtext = prompt("변경할 내용을 입력해주세요")
+        text.innerHTML=newtext
+    })
 }
