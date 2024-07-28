@@ -16,5 +16,12 @@ function addTodolist() {
         todo.value = '' // 텍스트 박스 비우기
     }
     console.log(todolist)
-}
 
+    li.addEventListener('click',()=>{
+        li.style.textDecoration="line-through"
+    }) // 한번 클릭 시 텍스트에 줄 긋기
+
+    li.addEventListener('dblclick',()=>{
+        todolist.removeChild(li)
+    }) // 더블클릭하면 할 일 목록에서 제거
+}
