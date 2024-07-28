@@ -45,6 +45,11 @@ ul{
     text-align: left;
 }
 
+li{
+    margin: 8px 0;
+    font-weight: 500;
+}
+
 li>button{
     background-color: #ffffff;
     width: 1rem;
