@@ -1,0 +1,38 @@
+#TodoContainer{
+    background-color: pink;
+    width:20rem;
+    margin:0 auto;
+    height: auto;
+    text-align: center;
+    padding: 2em 0;
+    border-radius: 3px;
+}
+
+.textcontainer{
+    width:70%;
+    height: 2.1em;
+    font-weight: 700;
+    border:none;
+    border-radius: 3px;
+    padding-left: 7px;
+}
+input:focus{
+    outline:none;
+}
+
+h2{
+    margin:0;
+    margin-bottom: 5%;
+}
+
+.submitbutton{
+    height: 2rem;
+    width: 2rem;
+    background-color: #f78d9f;
+    border: none;
+    border-radius: 3px;
+}
+
+.submitbutton:hover{
+    background-color: #ad606d;
+}
