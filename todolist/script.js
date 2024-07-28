@@ -21,11 +21,13 @@ function addTodolist() {
     btn.addEventListener('click', () => {
         if (swt) {
             li.style.textDecoration = "line-through"
+            li.style.color = "#a1a1a1"
             btn.style.backgroundColor = "#e37e8e"
             swt=false
         } // 체크 안되어 있을 시 버튼 누르면 밑줄 긋기
         else{
             li.style.textDecoration = "none"
+            li.style.color = "black"
             btn.style.backgroundColor = "white"
             swt=true
         } // 체크 되어 있을 시 버튼 누르면 밑줄 삭제
