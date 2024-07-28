@@ -1,5 +1,9 @@
+body{
+    background-color: #ffe4e9;
+}
+
 #TodoContainer{
-    background-color: pink;
+    background-color: #ffc0cb;
     width:20rem;
     margin:0 auto;
     height: auto;
