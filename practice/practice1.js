@@ -1,28 +1,30 @@
-let a
-let sign
-let b
-
-function input(){
-  a = prompt("첫번째 값 입력")
-  sign = prompt("계산 부호")
-  b = prompt("두번쨰 값 입력")
-
-  a = parseInt(a)
-  b = parseInt(b)
+let num = {
+    a: 0,
+    sign: 0,
+    b: 0
 }
 
-function calc(a,b,sign){
-  if(sign == '+')
-    alert(a+sign+b+'='+(a+b))
-  else if(sign == '-')
-    alert(a+sign+b+'='+(a-b))
-  else if(sign == '*')
-    alert(a+sign+b+'='+(a*b))
-  else if(sign == '/')
-    alert(a+sign+b+'='+(a/b))
-  else if(sign == '%')
-    alert(a+sign+b+'='+(a%b))
+function input() {
+    num.a = prompt("첫번째 값 입력")
+    num.sign = prompt("계산 부호")
+    num.b = prompt("두번쨰 값 입력")
+
+    num.a = parseInt(num.a)
+    num.b = parseInt(num.b)
+}
+
+function calc(a, b, sign) {
+    if (sign == '+')
+        alert(a + sign + b + '=' + (a + b))
+    else if (sign == '-')
+        alert(a + sign + b + '=' + (a - b))
+    else if (sign == '*')
+        alert(a + sign + b + '=' + (a * b))
+    else if (sign == '/')
+        alert(a + sign + b + '=' + (a / b))
+    else if (sign == '%')
+        alert(a + sign + b + '=' + (a % b))
 }
 
 input()
-calc(a,b,sign)
+calc(num.a, num.b, num.sign)
