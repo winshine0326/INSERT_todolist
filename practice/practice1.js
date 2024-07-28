@@ -4,7 +4,7 @@ let num = {
     b: 0
 }
 
-function input() {
+const input = () => {
     num.a = prompt("첫번째 값 입력")
     num.sign = prompt("계산 부호")
     num.b = prompt("두번쨰 값 입력")
@@ -13,7 +13,7 @@ function input() {
     num.b = parseInt(num.b)
 }
 
-function calc(a, b, sign) {
+const calc = (a, b, sign) => {
     if (sign == '+')
         alert(a + sign + b + '=' + (a + b))
     else if (sign == '-')
