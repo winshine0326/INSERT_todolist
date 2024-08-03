@@ -24,18 +24,10 @@ function addTodolist() {
     console.log(todolist)
 
     btn.addEventListener('click', () => {
-        if (swt) {
-            li.style.textDecoration = "line-through"
-            li.style.color = "#a1a1a1"
-            btn.style.backgroundColor = "#e37e8e"
-            swt = false
-        } // 체크 안되어 있을 시 버튼 누르면 밑줄 긋기
-        else {
-            li.style.textDecoration = "none"
-            li.style.color = "black"
-            btn.style.backgroundColor = "white"
-            swt = true
-        } // 체크 되어 있을 시 버튼 누르면 밑줄 삭제
+        li.style.textDecoration = swt?"line-through":"none"
+        li.style.color = swt?"#a1a1a1":"black"
+        btn.style.backgroundColor = swt?"#e37e8e":"white"
+        swt = !swt
     }) // 버튼 한번 클릭 시 텍스트에 줄 긋기
 
     text.addEventListener('dblclick', () => {
