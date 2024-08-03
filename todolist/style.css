@@ -12,7 +12,7 @@ body{
     border-radius: 3px;
 }
 
-#textcontainer{
+#text-container{
     width:70%;
     height: 2.1em;
     font-weight: 700;
@@ -29,7 +29,7 @@ h2{
     margin-bottom: 5%;
 }
 
-.submitbutton{
+.submit-button{
     height: 2rem;
     width: 2rem;
     background-color: #f78d9f;
@@ -37,7 +37,7 @@ h2{
     border-radius: 3px;
 }
 
-.submitbutton:hover{
+.submit-button:hover{
     background-color: #ad606d;
 }
 

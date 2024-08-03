@@ -12,7 +12,7 @@ function addTodolist() {
     li.appendChild(text)
     li.appendChild(delbtn)
     
-    const todo = document.getElementById('textcontainer')
+    const todo = document.getElementById('text-container')
     if (!todo.value)
         alert("해야할 일을 작성해주세요!")
     else {
